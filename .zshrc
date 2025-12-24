@@ -115,3 +115,8 @@ apd () {
 #
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/jazzcrazed/.lmstudio/bin"
+# End of LM Studio CLI section
+
