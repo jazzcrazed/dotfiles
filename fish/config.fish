@@ -13,3 +13,6 @@ alias vim nvim
 set -gx PATH $PATH /home/jazzcrazed/.lmstudio/bin
 # End of LM Studio CLI section
 
+
+# opencode
+fish_add_path /home/jazzcrazed/.opencode/bin
