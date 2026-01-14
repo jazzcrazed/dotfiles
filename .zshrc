@@ -26,7 +26,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # ----------------------------------------------------------------------------/
 #
 # Set the directory we want to store zinit and plugins.
-ZINIT_HOME="{${HOME}/.local/share}/zinit/zinit.git"
+ZINIT_HOME="${HOME}/.local/share/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
@@ -45,15 +45,6 @@ zinit light zsh-users/zsh-syntax-highlighting        # Syntax Highlighting
 zinit light zsh-users/zsh-completions                # Auto-Complete
 zinit light zsh-users/zsh-autosuggestions            # Auto Suggestions
 zinit light Aloxaf/fzf-tab                           # Fuzzy-finding tab
-
-# OMZ snippets
-zinit snippet OMZL::git.zsh
-zinit snippet OMZP::git
-zinit snippet OMZP::sudo
-zinit snippet OMZP::aws
-zinit snippet OMZP::kubectl
-zinit snippet OMZP::kubectx
-zinit snippet OMZP::command-not-found
 
 ###############################################################################
 # INITIALIZATIONS                                                             |
