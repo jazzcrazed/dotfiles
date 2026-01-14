@@ -10,7 +10,9 @@ config.color_scheme = "Batman"
 
 config.enable_tab_bar = false
 
-config.window_decorations = "NONE"
+if wezterm.target_triple:find("linux") ~= nil then
+  config.window_decorations = "NONE"
+end
 
 config.window_background_opacity = 0.95
 config.macos_window_background_blur = 10
