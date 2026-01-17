@@ -1,5 +1,7 @@
-# Homebrew on Mac
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if test "$os" = "darwin"
+  # Homebrew on Mac
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+end
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
@@ -23,8 +25,14 @@ alias vim nvim
 set -gx PATH $PATH /home/jazzcrazed/.lmstudio/bin
 # End of LM Studio CLI section
 
-
 # opencode
-fish_add_path /home/jazzcrazed/.opencode/bin
-fish_add_path /Users/marcocarag/.opencode/bin
+if test "$os" = "linux"
+  fish_add_path /home/jazzcrazed/.opencode/bin
+end
+if test "$os" = "darwin"
+  fish_add_path /Users/marcocarag/.opencode/bin
+end
 export PATH="$HOME/.local/bin:$PATH"
+
+# Snap
+fish_add_path /var/lib/snapd/snap/bin
