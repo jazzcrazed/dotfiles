@@ -24,7 +24,7 @@
     "temperature",
     "keyboard-state",
     "sway/language",
-    "custom/timer",
+//    "custom/timer",
     "clock",
     "tray",
     "custom/power"
